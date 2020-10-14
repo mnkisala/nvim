@@ -1,0 +1,46 @@
+{
+  // diagnostics
+  "diagnostic.refreshAfterSave": true,
+  "diagnostic.refreshOnInsertMode": true,
+   
+  // explorer
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.width": 30,
+  "explorer.keyMappings": {
+    "i": false, 
+
+    "*": "toggleSelection",
+    "<tab>": "actionMenu",
+
+    "J": ["toggleSelection", "nodeNext"],
+    "K": ["toggleSelection", "nodePrev"],
+    "o": ["expanded?", "collapse", "expand", 
+          "expandable?", " ", "open"],
+
+    "s": "open:vsplit",
+    "<bs>": "gotoParent",
+
+    "y": "copyFilename",
+    "Y": "copyFilepath",
+    "c": "copyFile",
+    "x": "cutFile",
+    "p": "pasteFile",
+    "d": "delete",
+    "D": "deleteForever",
+
+    "a": "addFile",
+    "A": "addDirectory",
+    "r": "rename",
+
+    ".": "toggleHidden",
+    "R": "refresh",
+
+    "?": "help",
+    "q": "quit",
+    "E": "quit",
+    "<esc>": "esc",
+
+    "f": "searchRecursive"
+  }
+}
