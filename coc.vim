@@ -15,7 +15,6 @@ set updatetime=1000
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-" Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
 if has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
@@ -75,5 +74,5 @@ omap ac <Plug>(coc-classobj-a)
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
  
-" explorer 
-nnoremap E :CocCommand explorer <CR>
+" switch header-source files (clangd)
+autocmd FileType c,cpp nnoremap <silent> <leader>h :CocCommand clangd.switchSourceHeader<CR>

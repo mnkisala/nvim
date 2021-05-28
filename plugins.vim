@@ -1,15 +1,12 @@
-call plug#begin("~/.config/nvim/plugins")
-Plug 'preservim/nerdtree'
+call plug#begin("~/.config/nvim/VimPlugDownloads")
+Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'jiangmiao/auto-pairs'
-Plug 'frazrepo/vim-rainbow'
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'yuttie/comfortable-motion.vim'
-Plug 'arcticicestudio/nord-vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tpope/vim-surround'
-Plug 'hzchirs/vim-material'
+Plug 'jiangmiao/auto-pairs'
 Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
